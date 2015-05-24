@@ -20,13 +20,15 @@ run_analysis.R completes two separate calculations the training set and once for
 Each calculation reads in 4 files:
  1. features.txt that provides the names of columns or variables
  2. a data set that contains values for each variable
- 3. These two are used to construct a data frame with descriptive variable names
- 4. This data frame is enriched with two more vectors read in from the other two files
- 5. These two other vectors must be assigned descriptive variable names
- 6. These two other vectors are added to the data frame through cbind command
- 7. These two other vectors correspond to Subject and Activity
+ 3. These two are used to construct a data frame with descriptive variable names,
+ 4. All variables that do not contain "std" or "mean" (case insensitive) are dropped from the data frame
+ 5. This data frame is enriched with two more vectors read in from the other two files
+ 6. These two other vectors must be assigned descriptive variable names
+ 7. These two other vectors are added to the data frame through cbind command
+ 8. These two other vectors correspond to Subject and Activity
 These two calculations for the training and test are combined into a single data frame using rbind
-The vector for Activity is represented by an integer.  To give it meaning, one more  file is used, the activites lables file
+The vector for Activity is represented by an integer.  To give it meaning, one more  file is used, the activites labels file.  The labels file contains a string values for each activity. The merge command is used to combine the data frames on "activity_index".  Now the "activity_index" and has been replaced with string values in the "Activity" variable.
+The final final calculation requires the melt and dcast commands
 
 ##Expected Inputs
 
