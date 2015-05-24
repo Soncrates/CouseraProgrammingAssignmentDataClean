@@ -43,6 +43,7 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 Additional vectors, "Activity" and "Subject" provide a unique identifier
 
 ###Activity
+Can be one of the following values
 - WALKING
 - WALKING_UPSTAIRS
 - WALKING_DOWNSTAIRS
@@ -53,7 +54,9 @@ Additional vectors, "Activity" and "Subject" provide a unique identifier
 ###Subject
 Each subject is represented by an integer
 
- 88 vectors
+##Summary
+
+ The data contains 88 vectors
  1. 2 variables to provide basis for grouping of values, consequently providing unique identifier for each row
 - "Activity" 
 - "Subject" 
