@@ -14,6 +14,20 @@ There is one r script,run_analysis.R , which when sourced into r command line, i
 
 The r script can also execute verification to double check the calculations are accurate.  This can be enabled by uncommenting the for loop at the end  of main function (line 120:122)
 
+##Summary
+
+run_analysis.R completes two separate calculations the training set and once for the test set.
+Each calculation reads in 4 files:
+ 1. features.txt that provides the names of columns or variables
+ 2. a data set that contains values for each variable
+ 3. These two are used to construct a data frame with descriptive variable names
+ 4. This data frame is enriched with two more vectors read in from the other two files
+ 5. These two other vectors must be assigned descriptive variable names
+ 6. These two other vectors are added to the data frame through cbind command
+ 7. These two other vectors correspond to Subject and Activity
+These two calculations for the training and test are combined into a single data frame using rbind
+The vector for Activity is represented by an integer.  To give it meaning, one more  file is used, the activites lables file
+
 ##Expected Inputs
 
 run_analysis.R expects to be in the r working directory and that the followning files are available and in aascii format
@@ -57,3 +71,5 @@ run_analysis.R expects to be in the r working directory and that the followning 
   2. "Activity" column name should contain strings that only occur in the 'activity_labels.txt'
   3. First row contains header metadata, column names include, "Activity", "Subject" and every column from the original data set that includes the string "std" or "mean", both of which are case insensitive
   4. Rows contain contain unique pairs of Activity and Subject and the columns, though they have  the same name as the tidied.csv, the value in each column contains the mean value found in all corresponding Activity and Subject rows from tidied.csv file. 
+
+  The purpose of writing tidied_data.csv is to cache the calculation for generating step5_data.txt
