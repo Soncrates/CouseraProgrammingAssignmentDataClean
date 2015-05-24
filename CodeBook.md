@@ -1,4 +1,5 @@
-#Feature Selection 
+#Code Book
+##Feature Selection 
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -49,12 +50,14 @@ Activity can be one of these values :
 - STANDING
 - LAYING
 
-Each vector represents calculation of the mean of all values for each Subject for each activity.  There are a total of 86 calculations for each Activity for each Subject, making the total number of columns to 88. Activity and Subject being a unique pair for each row
+Each subject is an integer
 
-The following is a list of variables of each feature vector.
-
+Each vector represents calculation of the mean of all values for each Subject for each activity.  
+ 1. 88 variables
+ 2. 2 variables to provide basis for grouping of values, consequently providing unique identifier for each row
 - "Activity" 
 - "Subject" 
+ 3. 86 calculations of mean values for each variable for each Activity for each Subject
 - "tBodyAcc.mean...X" 
 - "tBodyAcc.mean...Y" 
 - "tBodyAcc.mean...Z" 
