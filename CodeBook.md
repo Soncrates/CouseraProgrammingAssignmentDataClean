@@ -144,3 +144,7 @@ Each subject is represented by an integer
 - "angle.X.gravityMean." 
 - "angle.Y.gravityMean." 
 - "angle.Z.gravityMean."
+
+##Clarification
+- Each of the 86 calculated vectors represents either the "mean of means" or the "mean of Standard deviation" of the sampled sensor data for each variable for each subject for each activity.
+- The column names were derived from features.txt file and were stripped special characters when the data table was written to disk by the write.table function.  Literally cleaned itself.
