@@ -27,12 +27,14 @@ baseGetSet <- function(filename) {
 
 baseGetActivity <- function(filename){
     ret <- read.table(filename)
+    # providing index point for merge command, to be execute later
     colnames(ret)[1] <- "activity_index"
     ret  
 }
 
 baseGetSubject <- function(filename){
     ret <- read.table(filename)
+    # accomplishing step 4, applying  meaningful names
     colnames(ret)[1] <- "Subject"
     ret  
 }
@@ -63,7 +65,9 @@ main_1 <- function() {
   # other wise it would have been used earlier
     
     map <- read.table("activity_labels.txt")
+    # accomplishing step 4, applying  meaningful names
     colnames(map)[2] <- "Activity"
+    # providing index point for merge command
     colnames(map)[1] <- "activity_index"
 
   # step 3 give descriptive value in Activity column
