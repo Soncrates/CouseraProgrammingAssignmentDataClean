@@ -10,8 +10,9 @@ The purpose of  this project is to execute five (5) tasks
  4. Appropriately labels the data set with descriptive variable names. 
  5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+There is one r script,run_analysis.R , which when sourced into r command line, it will execute it's main function.  To disable this, you must edit the rscript and comment out the last command (line 125).
 
-There is one r script,run_analysis.R , which when sourced into r command line, it will execute it's main function.  To disable this, you must edit the rscript and comment out the last line.
+The r script can also execute verification to double check the calculations are accurate.  This can be enabled by uncommenting the for loop at the end  of main function (line 120:122)
 
 ##Expected Inputs
 
