@@ -30,13 +30,21 @@ run_analysis.R expects to be in the r working directory and that the followning 
   2. The number of columns must corespond with the number of row found in the feature.txt.
 - 'train/y_train.txt': Training labels.  
  1. Contains a single column of  integers.
- 2. Must coorespond to integers found in activity_lables.txt  
+ 2. Number or rows must correspond to number of row in Training Set
+ 3. Must coorespond to integers found in activity_lables.txt  
 - 'test/X_test.txt': Test set.
   1. Contains rows of floating point numbers separated by white space
   2. The number of columns must corespond with the number of row found in the feature.txt.
 - 'test/y_test.txt': Test labels.  
  1. Contains a single column of  integers.
- 2. Must coorespond to integers found in activity_lables.txt  
+ 2. Number or rows must correspond to number of row in Test Set
+ 3. Must coorespond to integers found in activity_lables.txt  
+- 'train/subject_train.txt' : Subject labels
+ 1. Contains a single column of integers.
+ 2. Number or rows must correspond to number of row in Training Set
+- 'test/subject_test.txt' : Subject labels
+ 1. Contains a single column of integers.
+ 2. Number or rows must correspond to number of row in Test Set
 
 ##Expected Outputs
 
