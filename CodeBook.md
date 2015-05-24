@@ -42,7 +42,7 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 
 Additional vectors, "Activity" and "Subject" provide a unique identifier
 
-Activity can be one of these values :
+###Activity
 - WALKING
 - WALKING_UPSTAIRS
 - WALKING_DOWNSTAIRS
@@ -50,14 +50,14 @@ Activity can be one of these values :
 - STANDING
 - LAYING
 
-Each subject is an integer
+###Subject
+Each subject is represented by an integer
 
-Each vector represents calculation of the mean of all values for each Subject for each activity.  
- 1. 88 variables
- 2. 2 variables to provide basis for grouping of values, consequently providing unique identifier for each row
+ 88 vectors
+ 1. 2 variables to provide basis for grouping of values, consequently providing unique identifier for each row
 - "Activity" 
 - "Subject" 
- 3. 86 calculations of mean values for each variable for each Activity for each Subject
+ 2. 86 calculations of mean values for each variable for each Activity for each Subject
 - "tBodyAcc.mean...X" 
 - "tBodyAcc.mean...Y" 
 - "tBodyAcc.mean...Z" 
